@@ -1,0 +1,30 @@
+:root{
+    --white: var(--white);
+    
+}
+
+
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.navbar{
+    background-color: white;
+    color: black;
+}
+
+.container-display{
+    max-width: 1000px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+.card-flag img {
+    width: 100px;
+    height: 100px;
+}
