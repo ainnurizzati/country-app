@@ -37,7 +37,6 @@ function Home() {
             <p>Where in the world?</p>
           </div>
           <div className="mode">
-            <span>logo</span>
             <p>Dark Mode</p>
           </div>
         </div>
@@ -60,25 +59,27 @@ function Home() {
               <option value="oceania">Oceania</option>
             </select>
           </div>
-        </div>
-        <div className="container-display">
-          {data.map((item) => {
-            return (
-              <div className="display-card">
-                <div className="card-flag">
-                  <img src={item.flags.svg}></img>
-                </div>
-                <div className="card-name">{item.name.common}</div>
-                <div className="card-details">
-                  <div className="details-population">
-                    Population: {item.population}
+          <div className="container-display">
+            {data.map((item) => {
+              return (
+                <div className="display-card">
+                  <div className="card-flag">
+                    <img src={item.flags.svg}></img>
                   </div>
-                  <div className="details-region">Region: {item.region}</div>
-                  <div className="details-capital">Capital: {item.capital}</div>
+                  <div className="card-name">{item.name.common}</div>
+                  <div className="card-details">
+                    <div className="details-population">
+                      Population: {item.population}
+                    </div>
+                    <div className="details-region">Region: {item.region}</div>
+                    <div className="details-capital">
+                      Capital: {item.capital}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </body>
     </html>
